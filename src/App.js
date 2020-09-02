@@ -23,6 +23,10 @@ function getGreeting(user){
   return <h1>Hello, Stranger</h1>
 }
 
+const element1 = <div tabIndex="0"></div>;
+
+const element2 = <img src={user.avatarUrl}></img>;
+
 function App() {
   return <>{element}</>;
 }
