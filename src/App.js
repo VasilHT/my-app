@@ -24,7 +24,7 @@ function getGreeting(user) {
 
 const element1 = <div tabIndex="0"></div>;
 
-const element2 = <img src={user.avatarUrl}></img>;
+const element2 = <div><img src={user.avatarUrl}></img></div>;
 /*OR, if a tag is empty, we can just close it with />*/
 const element3 = <img src={user.avatarUrl} />;
 
