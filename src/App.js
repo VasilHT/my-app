@@ -25,14 +25,15 @@ function getGreeting(user){
 
 const element1 = <div tabIndex="0"></div>;
 
-const element2 = <img src={user.avatarUrl}></img>;
+const element2 = <div><img src={user.avatarUrl}></img></div>;
 /*OR, if a tag is empty, we can just close it with />*/
-const element3 = <img src={user.avatarUrl}/>
+/*img tags are elements and they have to be wrapped with either: div, span, or empty tag <></>*/
+const element3 = <><img src={user.avatarUrl}/></>;
 
 const element4 = (
   <div>
     <h1 className="centered">Hello, {formatName(user)}!<br/></h1>
-    <h2 className="centered">Good to see you here.</h2>
+    <h2 className="onlyCenter">Good to see you here.</h2>
   </div>
 );
 

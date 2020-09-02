@@ -21,6 +21,13 @@
   color: crimson;
 }
 
+.onlyCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: crimson;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
