@@ -5,8 +5,8 @@ import "./App.css";
 /*const element = <h1 className="centered">Hello, world!</h1>;*/
 
 const user = {
-  firstName: "Harper",
-  lastName: "Perez",
+  firstName: "Brooke",
+  lastName: "Perez"
 };
 
 function formatName(user) {
@@ -15,11 +15,13 @@ function formatName(user) {
 
 const element = <h1 className="centered">Hello, {formatName(user)}!</h1>;
 
-// also we dont need those 4 lines
-// ReactDOM.render(
-//   element,
-//   document.getElementById('root')
-// );
+
+function getGreeting(user){
+  if(user){
+    return <h1>Hello, {formatName(user)}!</h1>;
+  }
+  return <h1>Hello, Stranger</h1>
+}
 
 function App() {
   return <>{element}</>;
