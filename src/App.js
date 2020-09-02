@@ -1,4 +1,5 @@
 import React from "react";
+import './App.css';
 
 const element = <h1 className="centered">Hello, world!</h1>;
 
