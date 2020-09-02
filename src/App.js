@@ -29,11 +29,9 @@ const element2 = <img src={user.avatarUrl}></img>;
 const element3 = <img src={user.avatarUrl} />;
 
 const element4 = (
-  <div>
-    <div className="centered">
-      <h1>Hello, {formatName(user)}!</h1>
-      <h2>Good to see you here.</h2>
-    </div>
+  <div className="centered">
+    <h1>Hello, {formatName(user)}!</h1>
+    <h2>Good to see you here.</h2>
   </div>
 );
 

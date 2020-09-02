@@ -1,4 +1,5 @@
-h1, h2 {
+h1,
+h2 {
   color: crimson;
   line-height: 1.33;
   margin: 10px 0;
@@ -15,5 +16,4 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
