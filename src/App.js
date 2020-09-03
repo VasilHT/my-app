@@ -50,6 +50,16 @@ const element12 = React.createElement(
   {className: 'geeting'},
   'Hello, world!'
 );
+//
+
+//This structure is simplified..
+const element13 = {
+  type: 'h1',
+  props: {
+    className: 'greeting',
+    children: 'Hello, world!'
+  }
+};
 
 function App() {
   return <>{element11}</>;
