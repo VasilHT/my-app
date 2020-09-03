@@ -50,7 +50,6 @@ const element12 = React.createElement(
   {className: 'geeting'},
   'Hello, world!'
 );
-//
 
 //This structure is simplified..
 const element13 = {
@@ -60,9 +59,33 @@ const element13 = {
     children: 'Hello, world!'
   }
 };
+/*
+function tick(){
+  const element222 = (
+    <div>
+      <h1>Hello, world!</h1>
+      <h2>It is {new Date().toLocaleTimeString()}.</h2>
+    </div>
+  );
+}
+
+setInterval(tick, 1000);
+*/
+
+//Functions and Class Components
+
+function Welcome1(props){
+return <h1>Hello, {props.firstName}</h1>
+}
+
+class Welcome extends React.Component{
+  render(){
+  return <h1>Hello, {this.props.firstName}</h1>
+  }
+}
 
 function App() {
-  return <>{element11}</>;
+  return <>{element12}</>;
 }
 
 export default App;
