@@ -39,8 +39,20 @@ const title = Response.potentiallyMaliciousInput;
 //this is safe
 const element5 = <h1>{title}</h1>
 
+const element11 = (
+  <h1 className="greeting">
+    Hello, world!
+  </h1>
+);
+//^this is the same with this
+const element12 = React.createElement(
+  'h1', 
+  {className: 'geeting'},
+  'Hello, world!'
+);
+
 function App() {
-  return <>{element4}</>;
+  return <>{element11}</>;
 }
 
 export default App;
