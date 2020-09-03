@@ -1,8 +1,4 @@
 import React from "react";
-import "./App.css";
-// you dont need this, that one has already seted in index.js -> import ReactDOM from 'react-dom';
-
-/*const element = <h1 className="centered">Hello, world!</h1>;*/
 
 const user = {
   firstName: "Brooke",
