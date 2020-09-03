@@ -75,17 +75,30 @@ setInterval(tick, 1000);
 //Functions and Class Components
 
 function Welcome1(props){
-return <h1>Hello, {props.firstName}</h1>
+return <h1>Hello, {props.name}</h1>
 }
 
+const elementAB = <Welcome1 name="Sara" />;
+/*
 class Welcome extends React.Component{
   render(){
   return <h1>Hello, {this.props.firstName}</h1>
   }
 }
+*/
 
-function App() {
-  return <>{element12}</>;
+function App(){
+  return (
+    <div>
+      <Welcome1 name="Sara" />
+      <Welcome1 name="Cahal" />
+      <Welcome1 name="Edite" />
+    </div>
+  );
 }
-
+/*
+function App() {
+  return <>{elementAB}</>;
+}
+*/
 export default App;
