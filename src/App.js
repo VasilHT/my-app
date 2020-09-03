@@ -35,6 +35,10 @@ const element4 = (
   </div>
 );
 
+const title = Response.potentiallyMaliciousInput;
+//this is safe
+const element5 = <h1>{title}</h1>
+
 function App() {
   return <>{element4}</>;
 }
